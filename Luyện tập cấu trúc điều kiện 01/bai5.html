@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kiemtra = +prompt('nhập điểm kiểm tra');
+        var giuaki = +prompt('nhập điểm giữa kì');
+        var cuoiki = +prompt('nhập điểm cuối kì');
+        var diem = kiemtra * 1 / 10 + giuaki * 3 / 10 + cuoiki * 6 / 10;
+        if (diem >= 8) {
+            document.write('học sinh giỏi');
+        } else if (diem >= 6.5) {
+            document.write('học sinh khá');
+        } else if (diem >= 5) {
+            document.write('học sinh trung bình');
+        } else if (diem >= 3.5) {
+            document.write('học sinh yếu');
+        } else {
+            document.write('học sinh kém');
+        }
+    </script>
+</body>
+</html>

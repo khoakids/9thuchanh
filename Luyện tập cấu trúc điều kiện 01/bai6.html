@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var doanhso = +prompt('nhập doanh số bán hàng');
+        if (doanhso < 5000000 ) {
+            thue = doanhso * 0 ;
+        } else if (doanhso < 10000000) {
+            thue = doanhso * 10 / 100;
+        } else if (doanhso < 20000000) {
+            thue = doanhso * 20 / 100;
+        } else {
+            thue = doanhso * 30 / 100;
+        }
+        console.log(thue);
+    </script>
+</body>
+</html>
