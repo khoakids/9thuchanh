@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = +prompt ('nhập a');
+        var b = +prompt ('nhập b');
+        var c = +prompt ('nhập c');
+        var nghiem;
+        var nghiem1;
+        var nghiem2;
+        var delta;
+        var truonghop;
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+                    document.write('phương trình có vô số nghiệm');
+                } else {
+                    document.write('phương trình vô nghiệm');
+                }
+            } else {
+                nghiem = -c / b;
+                document.write('phương trình có nghiệm duy nhất là ' + nghiem );
+            }
+        } else {
+            delta = Math.pow(b, 2) - 4 * a * c;
+        }
+        if (delta > 0) {
+            truonghop = 0;
+        } else if (delta = 0) {
+            truonghop = 1;
+        } else {
+            truonghop = 2;
+        } 
+        switch (truonghop) {
+            case 0 :
+            nghiem1 = (-b + Math.sqrt(delta))/2*a;
+            nghiem2 = (-b - Math.sqrt(delta))/2*a;
+            break;
+            case 1 :
+            nghiem1 = nghiem2 = -b / 2 * a;
+            break;
+            case 2 :
+            document.write('phương trình vô nghiệm');
+        }
+        console.log(nghiem1);
+        console.log(nghiem2);
+        
+    </script>
+</body>
+</html>
